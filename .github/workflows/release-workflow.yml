@@ -1,0 +1,26 @@
+name: Release
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-*'
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Docker: Parse release version"
+      id: docker_release_version
+      run: echo ::set-output name=docker_release_version::${GITHUB_REF/refs\/tags\//}
+    - name: "Build: Docker image"
+      run: |
+        docker build \
+        -t docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:${{ steps.docker_release_version.outputs.docker_release_version }} \
+        -t docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest \
+        .
+    - name: "Publish: Docker image"
+      run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:${{ steps.docker_release_version.outputs.docker_release_version }}
+    - name: "Publish: Remove previous latest image, due to GitHub docker registry being immutable"
+      run: docker rmi docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest || true
+    - name: "Publish: Docker image as latest"
+      run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest
