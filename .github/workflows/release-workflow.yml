@@ -9,6 +9,12 @@ jobs:
   image:
     runs-on: ubuntu-latest
     steps:
+    - name: Login to GitHub Docker Repository
+      uses: azure/docker-login@v1
+      with:
+        login-server: docker.pkg.github.com
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     - name: Shallow checkout
       uses: actions/checkout@v2
       with:
