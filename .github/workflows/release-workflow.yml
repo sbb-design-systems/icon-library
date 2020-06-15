@@ -9,6 +9,10 @@ jobs:
   image:
     runs-on: ubuntu-latest
     steps:
+    - name: Shallow checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
     - name: "Docker: Parse release version"
       id: docker_release_version
       run: echo ::set-output name=docker_release_version::${GITHUB_REF/refs\/tags\//}
