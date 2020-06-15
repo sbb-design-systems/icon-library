@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.0.0 (2020-06-15)
+
+
+### Features
+
+* create docker image for icon cdn ([#1](https://github.com/sbb-design-systems/icon-library/issues/1)) ([be8fa45](https://github.com/sbb-design-systems/icon-library/commit/be8fa45d5c2a764f15959dd1787a48db8b3f2423))
