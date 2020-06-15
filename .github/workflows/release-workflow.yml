@@ -30,7 +30,5 @@ jobs:
         .
     - name: "Publish: Docker image"
       run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:${{ steps.docker_release_version.outputs.docker_release_version }}
-    - name: "Publish: Remove previous latest image, due to GitHub docker registry being immutable"
-      run: docker rmi docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest || true
     - name: "Publish: Docker image as latest"
-      run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest
+      run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest || true
