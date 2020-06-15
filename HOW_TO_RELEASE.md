@@ -1,6 +1,6 @@
 # How to release
 This repository uses [Conventional Commits](https://www.conventionalcommits.org/) to generate the changelog.
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+See [PROCESS.md](./PROCESS.md).
 
 To create the releases, [standard-version](https://www.npmjs.com/package/standard-version) will be used.
 (For a detailled documentation, see https://www.npmjs.com/package/standard-version#cli-usage)
