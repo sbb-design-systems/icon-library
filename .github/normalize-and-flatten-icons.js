@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 if (require.main === module) {
+  const version = process.env.CDN_VERSION || 'unversioned';
   const root = process.cwd();
 
   const namespaces = fs
@@ -25,7 +26,7 @@ if (require.main === module) {
 
   fs.writeFileSync(
     path.join(root, 'index.json'),
-    JSON.stringify(icons),
+    JSON.stringify({ version, icons }),
     'utf8'
   );
 
@@ -34,7 +35,7 @@ if (require.main === module) {
 <head>
   <title>SBB Icon CDN</title>
   <style type="text/css">
-    body {
+    div {
       display: flex;
       flex-wrap: wrap;
     }
@@ -51,6 +52,8 @@ if (require.main === module) {
   </style>
 </head>
 <body>
+  <h1>SBB Icon CDN ${version}</h1>
+  <div>
 ${icons
   .map(
     (i) => `<a href="${i.namespace}/${i.name}.svg">
@@ -69,6 +72,7 @@ ${icons
 `
   )
   .join('\n')}
+  </div>
 </body>
 </html>
 `;

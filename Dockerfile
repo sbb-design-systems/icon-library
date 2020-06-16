@@ -56,6 +56,9 @@ RUN CONFARGS=$(nginx -V 2>&1 | sed -n -e 's/^.*arguments: //p') \
 
 FROM alpine:latest AS icons-builder
 
+ARG CDN_VERSION_ARG
+ENV CDN_VERSION=$CDN_VERSION_ARG
+
 WORKDIR /usr/icons
 
 RUN apk add --no-cache brotli gzip nodejs
@@ -68,7 +71,7 @@ COPY ./icons/svg/FPL fpl
 COPY ./icons/svg/KOM/responsive kom
 
 # Normalize and flatten icons and create index
-RUN node ./normalize-and-flatten-icons.js fpl
+RUN node ./normalize-and-flatten-icons.js
 
 # Create compressed variants of the icons
 RUN brotli -k --best */*.svg

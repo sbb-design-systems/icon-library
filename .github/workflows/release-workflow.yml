@@ -24,11 +24,11 @@ jobs:
       run: echo ::set-output name=docker_release_version::${GITHUB_REF/refs\/tags\//}
     - name: "Build: Docker image"
       run: |
-        docker build \
+        docker build --build-arg CDN_VERSION_ARG=${{ steps.docker_release_version.outputs.docker_release_version }} \
         -t docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:${{ steps.docker_release_version.outputs.docker_release_version }} \
         -t docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest \
         .
     - name: "Publish: Docker image"
       run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:${{ steps.docker_release_version.outputs.docker_release_version }}
     - name: "Publish: Docker image as latest"
-      run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest || true
+      run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest
