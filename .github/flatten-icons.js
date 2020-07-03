@@ -14,10 +14,7 @@ if (require.main === module) {
   for (const namespace of namespaces) {
     const namespaceRoot = path.join(root, namespace);
     for (const file of walk(namespaceRoot)) {
-      const name = path
-        .basename(file, '.svg')
-        .replace(/^sbb_/, '')
-        .replace(/_/g, '-');
+      const name = path.basename(file, '.svg');
       const tags = path.relative(root, path.dirname(file)).split('/');
       fs.renameSync(file, path.join(namespaceRoot, `${name}.svg`));
       icons.push({ name, namespace, tags });
@@ -76,11 +73,7 @@ ${icons
 </body>
 </html>
 `;
-  fs.writeFileSync(
-    path.join(root, 'index.html'),
-    html,
-    'utf8'
-  );
+  fs.writeFileSync(path.join(root, 'index.html'), html, 'utf8');
 }
 
 function walk(dir) {

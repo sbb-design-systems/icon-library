@@ -1,8 +1,8 @@
 # This Dockerfile creates the icon CDN, which is be hosted on icons.app.sbb.ch (AWS Cluster).
-# It flattens all svg icons into a "namespace" folder, removes the sbb_ prefix from FPL icons and replaces all _ with -.
+# It flattens all svg icons into a respective "namespace" folder.
 # (e.g.
-#   icons/svg/FPL/Attribut/sbb_sa_1.svg => fpl/sa-1.svg
-#   icons/svg/KOM/responsive/large/010_Basic/calendar_large.svg => kom/calendar-large.svg)
+#   icons/svg/FPL/Attribut/sa-1.svg => fpl/sa-1.svg
+#   icons/svg/KOM/responsive/large/010-Basic/calendar-large.svg => kom/calendar-large.svg)
 # It also creates the following:
 #  - Compressed variants of the icons (brotli, gzip), which will be served to compatible browsers.
 #  - An index.html with all icons
@@ -64,14 +64,14 @@ WORKDIR /usr/icons
 RUN apk add --no-cache brotli gzip nodejs
 
 # Copy js script to create namespace index json
-COPY ./.github/normalize-and-flatten-icons.js normalize-and-flatten-icons.js
+COPY ./.github/flatten-icons.js flatten-icons.js
 
-# Copy FPL icons, remove sbb_ prefix and rename _ to -
+# Copy FPL icons
 COPY ./icons/svg/FPL fpl
 COPY ./icons/svg/KOM/responsive kom
 
-# Normalize and flatten icons and create index
-RUN node ./normalize-and-flatten-icons.js
+# Flatten icons and create index
+RUN node ./flatten-icons.js
 
 # Create compressed variants of the icons
 RUN brotli -k --best */*.svg
