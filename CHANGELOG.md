@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/sbb-design-systems/icon-library/compare/v1.0.6...v1.0.7) (2020-07-03)
+
+
+### Bug Fixes
+
+* add cors header to index.json ([f5922e1](https://github.com/sbb-design-systems/icon-library/commit/f5922e17e36a05aa05b27cd50aaa926bd850e3e8))
+
 ### [1.0.6](https://github.com/sbb-design-systems/icon-library/compare/v1.0.5...v1.0.6) (2020-07-03)
 
 ### [1.0.5](https://github.com/sbb-design-systems/icon-library/compare/v1.0.4...v1.0.5) (2020-06-16)
