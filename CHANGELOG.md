@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/sbb-design-systems/icon-library/compare/v1.0.7...v1.1.0) (2020-07-09)
+
+
+### Features
+
+* replace 5 icons with .svg fill attribut issue and add 6 icons to the library (bell-disabled, bluetooth, bluetooth-disabled, qrcode-two-tickets, qrcade-disabled-two-tickets, arrow-change-horizontal) ([dc45aa2](https://github.com/sbb-design-systems/icon-library/commit/dc45aa2fd1c3b1c87e73f0f70bb35ba0c480374d))
+
 ### [1.0.7](https://github.com/sbb-design-systems/icon-library/compare/v1.0.6...v1.0.7) (2020-07-03)
 
 
