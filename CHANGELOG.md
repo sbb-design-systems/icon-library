@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/sbb-design-systems/icon-library/compare/v1.1.1...v1.2.0) (2020-07-17)
+
+
+### Features
+
+* add two icons to library (ramp-user, stairs-user) ([c4abed6](https://github.com/sbb-design-systems/icon-library/commit/c4abed68bcc6578e2214c0c8579475a845f1e5ae))
+
 ### [1.1.1](https://github.com/sbb-design-systems/icon-library/compare/v1.1.0...v1.1.1) (2020-07-17)
 
 ## [1.1.0](https://github.com/sbb-design-systems/icon-library/compare/v1.0.7...v1.1.0) (2020-07-09)
