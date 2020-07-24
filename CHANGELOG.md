@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sbb-design-systems/icon-library/compare/v1.2.0...v1.3.0) (2020-07-24)
+
+
+### Features
+
+* add css class "color-immutable" to icons that should not inherit color ([b82f6d6](https://github.com/sbb-design-systems/icon-library/commit/b82f6d61fb4291ba3363f06f5fef119a2d03e31b))
+
 ## [1.2.0](https://github.com/sbb-design-systems/icon-library/compare/v1.1.1...v1.2.0) (2020-07-17)
 
 
