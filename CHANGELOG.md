@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/sbb-design-systems/icon-library/compare/v1.4.0...v1.5.0) (2020-09-03)
+
+
+### Features
+
+* add 9 new large icons in library ([cdeb692](https://github.com/sbb-design-systems/icon-library/commit/cdeb692cb5bc0204b1994a1828681b52d7950b54))
+
 ## [1.4.0](https://github.com/sbb-design-systems/icon-library/compare/v1.3.0...v1.4.0) (2020-09-01)
 
 
