@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/sbb-design-systems/icon-library/compare/v1.5.2...v1.6.0) (2020-09-18)
+
+
+### Features
+
+* replace 4 timetable attributes (kw, sl, vn sk), add 2 timetable attributes (rs, vo), add 1 arrow icon (arrow-down) ([170adf1](https://github.com/sbb-design-systems/icon-library/commit/170adf1763fed5e5a0e33b97515d4c068888a061))
+
 ### [1.5.2](https://github.com/sbb-design-systems/icon-library/compare/v1.5.1...v1.5.2) (2020-09-10)
 
 ### [1.5.1](https://github.com/sbb-design-systems/icon-library/compare/v1.5.0...v1.5.1) (2020-09-10)
