@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/sbb-design-systems/icon-library/compare/v1.6.0...v1.7.0) (2020-09-28)
+
+
+### Features
+
+* add 3 icons (gear-changing, sa-uk, sa-fs) to the library ([dc3003a](https://github.com/sbb-design-systems/icon-library/commit/dc3003a30eaff4e8039c9cfb01e77335d197d9b1))
+
 ## [1.6.0](https://github.com/sbb-design-systems/icon-library/compare/v1.5.2...v1.6.0) (2020-09-18)
 
 
