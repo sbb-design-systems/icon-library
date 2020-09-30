@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/sbb-design-systems/icon-library/compare/v1.7.0...v1.8.0) (2020-09-30)
+
+
+### Features
+
+* add fpl attribut (sa-mo) ([a0dae5c](https://github.com/sbb-design-systems/icon-library/commit/a0dae5c94ab2d27e972179cf3d2cbe1f7418047a))
+
 ## [1.7.0](https://github.com/sbb-design-systems/icon-library/compare/v1.6.0...v1.7.0) (2020-09-28)
 
 
