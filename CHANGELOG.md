@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/sbb-design-systems/icon-library/compare/v1.8.0...v1.8.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* delete .svg from ios folder and add missing .png in ios folder ([9d55024](https://github.com/sbb-design-systems/icon-library/commit/9d550247fd3c66595e55451b2730c4fee429ab58))
+
 ## [1.8.0](https://github.com/sbb-design-systems/icon-library/compare/v1.7.0...v1.8.0) (2020-09-30)
 
 
