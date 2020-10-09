@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/sbb-design-systems/icon-library/compare/v1.8.1...v1.9.0) (2020-10-09)
+
+
+### Features
+
+* add new icon (id-card-employee) to library ([4c24da7](https://github.com/sbb-design-systems/icon-library/commit/4c24da787f01a2896664c0f686aa2b81b40636d8))
+
 ### [1.8.1](https://github.com/sbb-design-systems/icon-library/compare/v1.8.0...v1.8.1) (2020-10-02)
 
 
