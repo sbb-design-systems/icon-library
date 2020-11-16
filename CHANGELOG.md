@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/sbb-design-systems/icon-library/compare/v1.10.0...v1.11.0) (2020-11-16)
+
+
+### Features
+
+* add new icon to library (smartphone-shaking) ([b7d476e](https://github.com/sbb-design-systems/icon-library/commit/b7d476e47140e07385ecf657415b14caa1c2df00))
+
 ## [1.10.0](https://github.com/sbb-design-systems/icon-library/compare/v1.9.0...v1.10.0) (2020-11-04)
 
 
