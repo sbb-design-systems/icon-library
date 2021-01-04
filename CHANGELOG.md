@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/sbb-design-systems/icon-library/compare/v1.11.0...v1.12.0) (2021-01-04)
+
+
+### Features
+
+* add 6 icons to the library (narcotic, gun, coin-dollar, banknotes-dollar, double-deck-wagon, wagon) ([05dac86](https://github.com/sbb-design-systems/icon-library/commit/05dac8680141c78add68166b029d94988aa7acf8))
+
 ## [1.11.0](https://github.com/sbb-design-systems/icon-library/compare/v1.10.0...v1.11.0) (2020-11-16)
 
 
