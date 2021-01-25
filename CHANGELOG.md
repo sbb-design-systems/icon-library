@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/sbb-design-systems/icon-library/compare/v1.12.0...v1.13.0) (2021-01-25)
+
+
+### Features
+
+* add an icon to library (aerosol-can) ([019d6cd](https://github.com/sbb-design-systems/icon-library/commit/019d6cd837e6b93d1c4987c9422a0a038773cec7))
+
 ## [1.12.0](https://github.com/sbb-design-systems/icon-library/compare/v1.11.0...v1.12.0) (2021-01-04)
 
 
