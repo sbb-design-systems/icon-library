@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.1](https://github.com/sbb-design-systems/icon-library/compare/v1.13.0...v1.13.1) (2021-02-15)
+
+
+### Bug Fixes
+
+* rectify icon tick (tick icon has been moved up 3px) ([1be2361](https://github.com/sbb-design-systems/icon-library/commit/1be2361b7e3f199d09026bcfa2d538fa0f9c06cb))
+
 ## [1.13.0](https://github.com/sbb-design-systems/icon-library/compare/v1.12.0...v1.13.0) (2021-01-25)
 
 
