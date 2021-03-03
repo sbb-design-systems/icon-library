@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/sbb-design-systems/icon-library/compare/v1.13.1...v1.14.0) (2021-03-03)
+
+
+### Features
+
+* add one timetable attribut (sa-vs) to the library ([b432001](https://github.com/sbb-design-systems/icon-library/commit/b4320019a852873b60a07b67594b7556de01939b))
+
 ### [1.13.1](https://github.com/sbb-design-systems/icon-library/compare/v1.13.0...v1.13.1) (2021-02-15)
 
 
