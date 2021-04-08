@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/sbb-design-systems/icon-library/compare/v1.15.0...v1.16.0) (2021-04-08)
+
+
+### Features
+
+* add icon barrier-construction-small ([9e53db0](https://github.com/sbb-design-systems/icon-library/commit/9e53db02708960e3cb1c3322a5ba4cd36c2aa944))
+
 ## [1.15.0](https://github.com/sbb-design-systems/icon-library/compare/v1.14.0...v1.15.0) (2021-04-08)
 
 
