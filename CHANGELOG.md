@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/sbb-design-systems/icon-library/compare/v1.14.0...v1.15.0) (2021-04-08)
+
+
+### Features
+
+* change fpl atttribut (vb) according to request and add a new icon (barrier-construction) ([762edde](https://github.com/sbb-design-systems/icon-library/commit/762edde3a0d9bb439ffa8e2d94b2d3e9f17bd30d))
+
 ## [1.14.0](https://github.com/sbb-design-systems/icon-library/compare/v1.13.1...v1.14.0) (2021-03-03)
 
 
