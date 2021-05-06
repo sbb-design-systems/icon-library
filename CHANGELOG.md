@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/sbb-design-systems/icon-library/compare/v1.16.0...v1.17.0) (2021-05-06)
+
+
+### Features
+
+* add two icons (flashlight-off, fingerprint) and one timetable attribut (sa-wf) to library ([7957f63](https://github.com/sbb-design-systems/icon-library/commit/7957f638b469d8ec74df7c92c9cbef595e759ce5))
+
 ## [1.16.0](https://github.com/sbb-design-systems/icon-library/compare/v1.15.0...v1.16.0) (2021-04-08)
 
 
