@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/sbb-design-systems/icon-library/compare/v1.19.0...v1.20.0) (2021-06-07)
+
+
+### Features
+
+* add new icon category with 24 new icons ([803d093](https://github.com/sbb-design-systems/icon-library/commit/803d09376fb4a356c0c75ccf3e3a2e7a4a2b14d8))
+
 ## [1.19.0](https://github.com/sbb-design-systems/icon-library/compare/v1.18.0...v1.19.0) (2021-06-07)
 
 
