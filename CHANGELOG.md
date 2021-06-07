@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/sbb-design-systems/icon-library/compare/v1.18.0...v1.19.0) (2021-06-07)
+
+
+### Features
+
+* add 5 icons to library (chevron up, chevron down, double chevron small left, double chevron small right) ([f08689d](https://github.com/sbb-design-systems/icon-library/commit/f08689d2a003b6d6fdb8e038813d73f2385b9c0e))
+
 ## [1.18.0](https://github.com/sbb-design-systems/icon-library/compare/v1.17.0...v1.18.0) (2021-06-07)
 
 
