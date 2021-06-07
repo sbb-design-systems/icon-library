@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.18.0](https://github.com/sbb-design-systems/icon-library/compare/v1.17.0...v1.18.0) (2021-06-07)
+
+
+### Features
+
+* add timetable product icon (ogv) ([3e852c0](https://github.com/sbb-design-systems/icon-library/commit/3e852c0f4bc1e222195fdc6d12ebf163c87e8a04))
+
 ## [1.17.0](https://github.com/sbb-design-systems/icon-library/compare/v1.16.0...v1.17.0) (2021-05-06)
 
 
