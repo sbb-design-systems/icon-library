@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](https://github.com/sbb-design-systems/icon-library/compare/v1.20.1...v1.21.0) (2021-06-11)
+
+
+### Features
+
+* add icons for international campaign to library ([2740f5e](https://github.com/sbb-design-systems/icon-library/commit/2740f5e8d09bf10caaff8f92ca2c88bad19992fa))
+
 ### [1.20.1](https://github.com/sbb-design-systems/icon-library/compare/v1.20.0...v1.20.1) (2021-06-07)
 
 
