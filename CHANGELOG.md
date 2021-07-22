@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.23.0](https://github.com/sbb-design-systems/icon-library/compare/v1.22.0...v1.23.0) (2021-07-22)
+
+
+### Features
+
+* add 10 transport icons to library (profile view) ([a3110a0](https://github.com/sbb-design-systems/icon-library/commit/a3110a03d3bfd5d74bc27f504c273103c190559f))
+
 ## [1.22.0](https://github.com/sbb-design-systems/icon-library/compare/v1.21.0...v1.22.0) (2021-07-07)
 
 
