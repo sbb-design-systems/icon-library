@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.23.1](https://github.com/sbb-design-systems/icon-library/compare/v1.23.0...v1.23.1) (2021-08-23)
+
+
+### Bug Fixes
+
+* correct diamond icon ([d7bd48f](https://github.com/sbb-design-systems/icon-library/commit/d7bd48fade7704c67154b05ab0d1baa3b23a4b6d))
+
 ## [1.23.0](https://github.com/sbb-design-systems/icon-library/compare/v1.22.0...v1.23.0) (2021-07-22)
 
 
