@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.0](https://github.com/sbb-design-systems/icon-library/compare/v1.23.1...v1.24.0) (2021-09-22)
+
+
+### Features
+
+* add two icons (roof-bed, low-vision) ([84a3f0e](https://github.com/sbb-design-systems/icon-library/commit/84a3f0ee4d6b6c443896e8a28206fbd0aee917d9))
+
 ### [1.23.1](https://github.com/sbb-design-systems/icon-library/compare/v1.23.0...v1.23.1) (2021-08-23)
 
 
