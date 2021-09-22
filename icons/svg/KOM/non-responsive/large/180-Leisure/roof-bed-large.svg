@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>KOM/non-responsive/large/180-Leisure/roof-bed-large</title>
+    <g id="KOM/non-responsive/large/180-Leisure/roof-bed-large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" stroke="#000000" stroke-width="2">
+            <g id="KOM/responsive/small/180-Leisure/roof-bed-small">
+                <path d="M5.0004,44.0004 L5.0004,22.0004 L5.0004,44.0004 Z M5,22 L5,44 M5.0004,35.0004 L43.0004,35.0004 L5.0004,35.0004 Z M5,35 L43,35 M15,28 C15,29.656 13.656,31 12,31 C10.344,31 9,29.656 9,28 C9,26.344 10.344,25 12,25 C13.656,25 15,26.344 15,28 Z M19,35 L19,27 L39,27 C41.21,27 43,28.79 43,31 L43,44 M4,16 L24,6 L44,16" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
