@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.25.0](https://github.com/sbb-design-systems/icon-library/compare/v1.24.0...v1.25.0) (2021-10-21)
+
+
+### Features
+
+* add icons to library ([5553ccd](https://github.com/sbb-design-systems/icon-library/commit/5553ccda439fe95e3c0e8d20f33c358e05628406))
+
 ## [1.24.0](https://github.com/sbb-design-systems/icon-library/compare/v1.23.1...v1.24.0) (2021-09-22)
 
 
