@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.27.0](https://github.com/sbb-design-systems/icon-library/compare/v1.26.0...v1.27.0) (2021-11-15)
+
+
+### Features
+
+* add two icons in library (glass-cocktail, medical facility) and one fpl icon (sa-reisegruppe) ([305d24a](https://github.com/sbb-design-systems/icon-library/commit/305d24a8c658c127188edae6ed0ccb43fcac568f))
+
 ## [1.26.0](https://github.com/sbb-design-systems/icon-library/compare/v1.25.0...v1.26.0) (2021-11-03)
 
 
