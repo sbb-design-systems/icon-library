@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.27.1](https://github.com/sbb-design-systems/icon-library/compare/v1.27.0...v1.27.1) (2021-11-15)
+
+
+### Bug Fixes
+
+* correct icon circle-cross-large ([2ac9ffc](https://github.com/sbb-design-systems/icon-library/commit/2ac9ffc64ccd3aa3e49aad5352447cd734e19207))
+
 ## [1.27.0](https://github.com/sbb-design-systems/icon-library/compare/v1.26.0...v1.27.0) (2021-11-15)
 
 
