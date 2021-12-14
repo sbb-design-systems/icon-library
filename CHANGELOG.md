@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.28.0](https://github.com/sbb-design-systems/icon-library/compare/v1.27.1...v1.28.0) (2021-12-14)
+
+
+### Features
+
+* add 7 icons to library (cigarette, cigarette-disabled, lips-hand, waves-ladder, mountain-lake-sun, washing-machine, fireplace) ([0daa5a6](https://github.com/sbb-design-systems/icon-library/commit/0daa5a614e07d592f8ba0f9b8ac26512b6f0e20c))
+
 ### [1.27.1](https://github.com/sbb-design-systems/icon-library/compare/v1.27.0...v1.27.1) (2021-11-15)
 
 
