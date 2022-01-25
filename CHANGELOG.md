@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.29.1](https://github.com/sbb-design-systems/icon-library/compare/v1.29.0...v1.29.1) (2022-01-25)
+
+
+### Bug Fixes
+
+* adjust position of arrow-compass icon and move icons to the correct android folder ([fb59f89](https://github.com/sbb-design-systems/icon-library/commit/fb59f899d361479a28293225f5e48b196055e1f3))
+
 ## [1.29.0](https://github.com/sbb-design-systems/icon-library/compare/v1.28.1...v1.29.0) (2022-01-19)
 
 
