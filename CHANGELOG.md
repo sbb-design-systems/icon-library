@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.1](https://github.com/sbb-design-systems/icon-library/compare/v1.31.0...v1.31.1) (2022-03-03)
+
+
+### Bug Fixes
+
+* export and replace all android files to fix a folder structure error ([2cca096](https://github.com/sbb-design-systems/icon-library/commit/2cca0961e27d79c06a32ec0187f155cf3a043f7e))
+
 ## [1.31.0](https://github.com/sbb-design-systems/icon-library/compare/v1.30.0...v1.31.0) (2022-03-03)
 
 
