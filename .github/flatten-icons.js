@@ -22,6 +22,9 @@ if (require.main === module) {
       markImmutable(flatFilePath, file);
       icons.push({ name, namespace, tags });
     }
+    fs.readdirSync(namespaceRoot, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .forEach((d) => unlinkDir(path.join(namespaceRoot, d.name)));
   }
 
   if (option === 's3') {
@@ -96,6 +99,17 @@ ${icons
         }
         return files;
       }, []);
+  }
+
+  function unlinkDir(dir) {
+    fs.readdirSync(dir, { withFileTypes: true }).forEach((d) => {
+      if (d.isFile()) {
+        fs.unlinkSync(path.join(dir, d.name));
+      } else if (d.isDirectory()) {
+        unlinkDir(path.join(dir, d.name));
+      }
+    });
+    fs.rmdirSync(dir);
   }
 
   function markImmutable(file, originalPath) {

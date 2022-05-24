@@ -61,15 +61,6 @@ jobs:
         aws-access-key-id: ${{ secrets.ICON_CDN_AWS_ACCESS_ID }}
         aws-secret-access-key: ${{ secrets.ICON_CDN_AWS_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
-    - name: Upload KOM icons to s3
-      run: aws s3 cp . s3://${{ env.S3BUCKET }}/kom/ --include "*.svg"
-      working-directory: ${{ env.S3_DIR }}/kom
-    - name: Upload KOM index to s3
-      run: aws s3 cp index.json s3://${{ env.S3BUCKET }}/kom/
-      working-directory: ${{ env.S3_DIR }}/kom
-    - name: Upload FPL icons to s3
-      run: aws s3 cp . s3://${{ env.S3BUCKET }}/fpl/ --include "*.svg"
-      working-directory: ${{ env.S3_DIR }}/fpl
-    - name: Upload FPL index to s3
-      run: aws s3 cp index.json s3://${{ env.S3BUCKET }}/fpl/
-      working-directory: ${{ env.S3_DIR }}/fpl
+    - name: Upload icons and indexes to s3
+      run: aws s3 cp . s3://${{ env.S3BUCKET }} --recursive --include "*.svg" --include index.json
+      working-directory: ${{ env.S3_DIR }}
