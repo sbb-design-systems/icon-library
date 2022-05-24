@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 if (require.main === module) {
+  const [option] = process.argv.slice(2);
   const version = process.env.CDN_VERSION || 'unversioned';
   const root = process.cwd();
 
@@ -23,13 +24,24 @@ if (require.main === module) {
     }
   }
 
-  fs.writeFileSync(
-    path.join(root, 'index.json'),
-    JSON.stringify({ version, icons }),
-    'utf8'
-  );
+  if (option === 's3') {
+    for (const namespace of namespaces) {
+      const namespaceIcons = icons.filter((i) => i.namespace === namespace);
+      const namespaceRoot = path.join(root, namespace);
+      fs.writeFileSync(
+        path.join(namespaceRoot, 'index.json'),
+        JSON.stringify({ version, icons: namespaceIcons }),
+        'utf8'
+      );
+    }
+  } else {
+    fs.writeFileSync(
+      path.join(root, 'index.json'),
+      JSON.stringify({ version, icons }),
+      'utf8'
+    );
 
-  const html = `<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html>
 <head>
   <title>SBB Icon CDN</title>
@@ -70,26 +82,32 @@ ${icons
 </body>
 </html>
 `;
-  fs.writeFileSync(path.join(root, 'index.html'), html, 'utf8');
+    fs.writeFileSync(path.join(root, 'index.html'), html, 'utf8');
+  }
 
   function walk(dir) {
-    return fs.readdirSync(dir, { withFileTypes: true }).reduce((files, entry) => {
-      if (entry.isFile()) {
-        files.push(path.join(dir, entry.name));
-      } else if (entry.isDirectory()) {
-        files.push(...walk(path.join(dir, entry.name)));
-      }
-      return files;
-    }, []);
+    return fs
+      .readdirSync(dir, { withFileTypes: true })
+      .reduce((files, entry) => {
+        if (entry.isFile()) {
+          files.push(path.join(dir, entry.name));
+        } else if (entry.isDirectory()) {
+          files.push(...walk(path.join(dir, entry.name)));
+        }
+        return files;
+      }, []);
   }
-  
+
   function markImmutable(file, originalPath) {
     originalPath = originalPath.toLowerCase();
-    if (originalPath.includes('/fpl/') && ['/him-cus/', '/produkt/'].some(p => originalPath.includes(p))) {
+    if (
+      originalPath.includes('/fpl/') &&
+      ['/him-cus/', '/produkt/'].some((p) => originalPath.includes(p))
+    ) {
       console.log(`Marked ${path.relative(root, file)} as color immutable`);
       let content = fs.readFileSync(file, 'utf8');
       content = content.replace('<svg ', '<svg class="color-immutable" ');
       fs.writeFileSync(file, content, 'utf8');
     }
-  }  
+  }
 }

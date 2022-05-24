@@ -32,3 +32,39 @@ jobs:
       run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:${{ steps.docker_release_version.outputs.docker_release_version }}
     - name: "Publish: Docker image as latest"
       run: docker push docker.pkg.github.com/$GITHUB_REPOSITORY/icon-cdn:latest
+  
+  aws-s3-upload:
+    runs-on: ubuntu-latest
+    env:
+      S3_DIR: s3-icons
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 14
+    - name: Create s3 upload directory
+      run: mkdir $S3_DIR
+    - name: Copy fpl icons
+      run: cp -R ./icons/svg/FPL/ ./$S3_DIR/fpl
+    - name: Copy kom icons
+      run: cp -R ./icons/svg/KOM/responsive/ ./$S3_DIR/kom
+    - name: Prepare icons
+      run: node ../.github/flatten-icons.js s3
+      working-directory: ${{ env.S3_DIR }}
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.ICON_CDN_AWS_ACCESS_ID }}
+        aws-secret-access-key: ${{ secrets.ICON_CDN_AWS_ACCESS_KEY }}
+    - name: Upload KOM icons to s3
+      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/kom/
+      working-directory: ${{ env.S3_DIR }}/kom
+    - name: Upload KOM index to s3
+      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/kom/
+      working-directory: ${{ env.S3_DIR }}/kom
+    - name: Upload FPL icons to s3
+      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/fpl/
+      working-directory: ${{ env.S3_DIR }}/fpl
+    - name: Upload FPL index to s3
+      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/fpl/
+      working-directory: ${{ env.S3_DIR }}/fpl
