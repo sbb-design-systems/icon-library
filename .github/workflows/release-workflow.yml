@@ -37,6 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       S3_DIR: s3-icons
+      AWS_REGION: eu-central-1
+      S3BUCKET: cloudfront-icon-cdn-backend-esta-web-prod
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
@@ -56,15 +58,16 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.ICON_CDN_AWS_ACCESS_ID }}
         aws-secret-access-key: ${{ secrets.ICON_CDN_AWS_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
     - name: Upload KOM icons to s3
-      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/kom/
+      run: aws s3 cp *.svg s3://${{ env.S3BUCKET }}/kom/
       working-directory: ${{ env.S3_DIR }}/kom
     - name: Upload KOM index to s3
-      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/kom/
+      run: aws s3 cp *.svg s3://${{ env.S3BUCKET }}/kom/
       working-directory: ${{ env.S3_DIR }}/kom
     - name: Upload FPL icons to s3
-      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/fpl/
+      run: aws s3 cp *.svg s3://${{ env.S3BUCKET }}/fpl/
       working-directory: ${{ env.S3_DIR }}/fpl
     - name: Upload FPL index to s3
-      run: aws s3 cp *.svg s3://cloudfront-icon-cdn-backend-esta-web-prod/fpl/
+      run: aws s3 cp *.svg s3://${{ env.S3BUCKET }}/fpl/
       working-directory: ${{ env.S3_DIR }}/fpl
