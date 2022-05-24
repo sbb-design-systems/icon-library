@@ -53,6 +53,8 @@ jobs:
     - name: Prepare icons
       run: node ../.github/flatten-icons.js s3
       working-directory: ${{ env.S3_DIR }}
+    - name: Print directories
+      run: ls -Rll
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -60,13 +62,13 @@ jobs:
         aws-secret-access-key: ${{ secrets.ICON_CDN_AWS_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
     - name: Upload KOM icons to s3
-      run: aws s3 cp . s3://${{ env.S3BUCKET }}/kom/ --exclude "*" --include "*.svg"
+      run: aws s3 cp . s3://${{ env.S3BUCKET }}/kom/ --include "*.svg"
       working-directory: ${{ env.S3_DIR }}/kom
     - name: Upload KOM index to s3
       run: aws s3 cp index.json s3://${{ env.S3BUCKET }}/kom/
       working-directory: ${{ env.S3_DIR }}/kom
     - name: Upload FPL icons to s3
-      run: aws s3 cp . s3://${{ env.S3BUCKET }}/fpl/ --exclude "*" --include "*.svg"
+      run: aws s3 cp . s3://${{ env.S3BUCKET }}/fpl/ --include "*.svg"
       working-directory: ${{ env.S3_DIR }}/fpl
     - name: Upload FPL index to s3
       run: aws s3 cp index.json s3://${{ env.S3BUCKET }}/fpl/
