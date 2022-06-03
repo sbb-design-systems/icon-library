@@ -64,14 +64,14 @@ WORKDIR /usr/icons
 RUN apk add --no-cache brotli gzip nodejs
 
 # Copy js script to create namespace index json
-COPY ./.github/flatten-icons.js flatten-icons.js
+COPY ./.github/prepare-icons.js prepare-icons.js
 
 # Copy FPL icons
 COPY ./icons/svg/FPL fpl
 COPY ./icons/svg/KOM/responsive kom
 
 # Flatten icons and create index
-RUN node ./flatten-icons.js
+RUN node ./prepare-icons.js
 
 # Create compressed variants of the icons
 RUN brotli -k --best */*.svg

@@ -50,9 +50,14 @@ jobs:
       run: cp -R ./icons/svg/FPL/ ./$S3_DIR/fpl
     - name: Copy kom icons
       run: cp -R ./icons/svg/KOM/responsive/ ./$S3_DIR/kom
+    - name: Set output
+      id: tag_step
+      run: echo ::set-output name=tag::${GITHUB_REF/refs\/tags\//}
     - name: Prepare icons
-      run: node ../.github/flatten-icons.js s3
+      run: node ../.github/prepare-icons.js s3
       working-directory: ${{ env.S3_DIR }}
+      env:
+        CDN_VERSION: ${{ steps.tag_step.outputs.tag }}
     - name: Print directories
       run: ls -Rll
     - name: Configure AWS Credentials
