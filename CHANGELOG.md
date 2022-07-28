@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.38.0](https://github.com/sbb-design-systems/icon-library/compare/v1.37.0...v1.38.0) (2022-07-28)
+
+
+### Features
+
+* add fpl icons ([aeae10d](https://github.com/sbb-design-systems/icon-library/commit/aeae10d2a2699d7221b8cb643e30688f80846d64))
+
 ## [1.37.0](https://github.com/sbb-design-systems/icon-library/compare/v1.36.0...v1.37.0) (2022-07-18)
 
 
